@@ -5,7 +5,7 @@
 #define ROOT 0
 #define SORT 1
 #define END 2
-#define TABSIZE 6
+#define TABSIZE 100
 
 void swap(int *x, int *y) {
     *x = *x ^ *y;
