@@ -22,22 +22,22 @@ aaLTdQr7DyHuU
 int main() {
     char *password = "aaLTdQr7DyHuU";
 
-    char cmp[6] = {0};
+    char cmp[7] = {0};
     char salt[3] = {0};
     salt[0] = password[0];
     salt[1] = password[1];
 
-    for (char c1 = 'a'; c1 <= 'z'; ++c1) {
+    for (int c1 = 'a'; c1 <= 'z'; ++c1) {
         cmp[0] = c1;
-        for (char c2 = 'a'; c2 <= 'z'; ++c2) {
+        for (int c2 = 'a'; c2 <= 'z'; ++c2) {
             cmp[1] = c2;
-            for (char c3 = 'a'; c3 <= 'z'; ++c3) {
+            for (int c3 = 'a'; c3 <= 'z'; ++c3) {
                 cmp[2] = c3;
-                for (char c4 = 'a'; c4 <= 'z'; ++c4) {
+                for (int c4 = 'a'; c4 <= 'z'; ++c4) {
                     cmp[3] = c4;
-                    for (char c5 = 0; c5 < 'z'; ++c5) {
+                    for (int c5 = 'a'; c5 <= 'z'; ++c5) {
                         cmp[4] = c5;
-                        for (char c6 = 0; c6 < 'z'; ++c6) {
+                        for (int c6 = 'a'; c6 <= 'z'; ++c6) {
                             cmp[5] = c6;
 
                             char *x = crypt(cmp, salt);

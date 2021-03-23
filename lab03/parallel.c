@@ -28,9 +28,9 @@ int main(int argc, char **argv) {
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
-    char *password = "bahAZ9Hk7SCf6";
+    char *password = "aaLTdQr7DyHuU";
 
-    char cmp[6] = {0};
+    char cmp[7] = {0};
     char salt[3] = {0};
     salt[0] = password[0];
     salt[1] = password[1];
